@@ -10,22 +10,44 @@
 
   <style>
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: hsl(228, 45%, 44%) }; 
   </style>
+  <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
 
-  We're coming soon
+  <div class="container">
+    <div class="mobile-header">
+      <img class="mobile-logo" src="./images/logo.svg" alt="website-logo">
+    </div>
 
-  Hello fellow shoppers! We're currently building our new fashion store. 
-  Add your email below to stay up-to-date with announcements and our launch deals.
+    <div class="img-col">
+      <picture>
+        <!-- <source media="(min-width: )" srcset="./images/hero-desktop.jpg" alt="watch-ad-desktop"> -->
+        <img class="hero-img" src="./images/hero-mobile.jpg" alt="watch-ad-mobile">
+      </picture>
+    </div>
 
-  Email Address
+    <div class="intro-section">
+      <div class="inner-container">
+        <img class="desktop-logo" src="./images/logo.svg" alt="website-logo">
+        <h1>We're coming soon</h1>
+
+        <p>Hello fellow shoppers! We're currently building our new fashion store. 
+        Add your email below to stay up-to-date with announcements and our launch deals.</p>
+        
+        <form>
+          <input type="email" name="email" placeholder="Email Address" required>
+          <button type="submit">></button>
+        </form>
+      </div>
+    </div>
+  </div>
   
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="#">PEIPEI</a>.
     </p>
   </footer>
 </body>
