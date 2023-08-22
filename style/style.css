@@ -148,6 +148,7 @@ button {
 }
 
 @media screen and (min-width: 1080px) {
+  /* container background: images with linear-gradient over-layed */
   .container {
     flex-direction: row-reverse;
     height: 800px;
@@ -220,6 +221,7 @@ button {
     height: 56px;
   }
 
+  /* Desktop UI: button hover effect */
   button::before {
     content: " ";
     position: absolute;
