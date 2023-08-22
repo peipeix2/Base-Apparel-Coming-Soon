@@ -5,7 +5,7 @@ const button = document.querySelector('button')
 
 function checkInvalidStyle () {
   if (!input.checkValidity()) {
-    input.parentElement.style.border = '2px solid #F96464'
+    input.parentElement.style.border = '2px solid rgba(249, 100, 100, 100)'
     input.nextElementSibling.style.display = 'initial'
     errorMsg.style.display = 'block'
   } else {

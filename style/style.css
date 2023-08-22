@@ -2,7 +2,9 @@
   box-sizing: border-box
 }
 
-h1, p, form {
+h1,
+p,
+form {
   font-family: Josefin Sans, sans-serif;
 }
 
@@ -69,7 +71,7 @@ h1, p, form {
   display: none;
 }
 
-p {
+.intro {
   font-weight: 200;
   font-size: 14px;
   line-height: 22px;
@@ -81,7 +83,7 @@ form {
   display: flex;
   width: 100%;
   height: 48px;
-  border: 1px solid #CE9898;
+  border: 1px solid rgba(206, 152, 152, 0.5);
   border-radius: 28px;
   background-color: transparent;
   align-items: center;
@@ -115,7 +117,7 @@ button {
   height: 48px;
   border: none;
   border-radius: 28px;
-  background: linear-gradient(to bottom right, rgb(248, 191, 191),rgb(238, 139, 139));
+  background: linear-gradient(to bottom right, rgb(248, 191, 191), rgb(238, 139, 139));
   box-shadow: 0px 15px 20px rgb(198, 110, 110, 0.2476);
   align-items: center;
 }
@@ -143,4 +145,98 @@ button {
   margin-left: 22px;
   margin-top: 5px;
   color: #F96464;
+}
+
+@media screen and (min-width: 1080px) {
+  .container {
+    flex-direction: row-reverse;
+    height: 800px;
+    max-width: 1440px;
+    margin: 2em 1em;
+    background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 244, 244, 0.3)), url('../images/bg-pattern-desktop.svg');
+    background-size: contain;
+  }
+
+  .mobile-header {
+    display: none;
+  }
+
+  .img-col {
+    width: auto;
+    height: 800px;
+  }
+
+  .hero-img {
+    width: auto;
+    height: 100%;
+  }
+
+  .desktop-logo {
+    display: inline-block;
+    width: 158px;
+    height: 33px;
+  }
+
+  .inner-container {
+    text-align: left;
+    padding: 3em 15em 3em 7em;
+  }
+
+  .title {
+    margin-top: 136px;
+    margin-bottom: 32px;
+  }
+
+  .first-title {
+    font-size: 64px;
+    line-height: 64px;
+    letter-spacing: 17.32px;
+  }
+
+  .snd-title {
+    font-size: 64px;
+    line-height: 71px;
+    letter-spacing: 17.32px;
+  }
+
+  .intro {
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 40px;
+  }
+
+  form {
+    width: 100%;
+    height: 56px;
+  }
+
+  .input {
+    font-size: 16px;
+  }
+
+  button {
+    position: relative;
+    width: 100px;
+    height: 56px;
+  }
+
+  button::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 28px;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.3s;
+    box-shadow: 0px 15px 20px rgb(198, 110, 110, 0.2476);
+  }
+
+  button:hover::before {
+    opacity: 1;
+  }
+
 }
