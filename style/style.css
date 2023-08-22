@@ -14,9 +14,9 @@ form {
   margin: 2em auto;
   text-align: center;
   height: 800px;
-  max-width: 376px;
+  max-width: 375px;
   background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 244, 244));
-  box-shadow: 0px 15px 30px -11px rgba(133, 161, 210, 50%);
+  box-shadow: 10px 15px 30px rgba(133, 161, 210, 50%);
 }
 
 .mobile-header {
@@ -152,7 +152,7 @@ button {
     flex-direction: row-reverse;
     height: 800px;
     max-width: 1440px;
-    margin: 2em 1em;
+    margin: 2em auto;
     background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.5), rgba(255, 244, 244, 0.3)), url('../images/bg-pattern-desktop.svg');
     background-size: contain;
   }
@@ -239,4 +239,7 @@ button {
     opacity: 1;
   }
 
+  .error-message {
+    margin-top: 10px;
+  }
 }
