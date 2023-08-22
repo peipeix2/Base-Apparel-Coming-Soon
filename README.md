@@ -26,15 +26,17 @@ Users are able to:
   - The `input` field is empty
   - The email address is not formatted correctly
 
-### Screenshot
 
-![](./screenshot_desktop.png)
+### Screenshot
 
 Desktop Layout
 
-![](./screenshot_desktop_error.png)
+![](./screenshot_desktop.png)
 
 Desktop - Error State
+
+![](./screenshot_desktop_error.png)
+
 
 ## My process
 
@@ -93,6 +95,7 @@ In this solution, I used the '::before' selector, position and z-index, to put a
   }
 ```
 
+
 - Image Background with Linear-gradient Overlay
 
 For the background image of Desktop UI, I learnt that one could create linear-gradient overlay on image.
@@ -109,6 +112,7 @@ For the background image of Desktop UI, I learnt that one could create linear-gr
 ```
 
 However, compared to the design file, the result still looks a bit off. I'm still looking for a better way to solve this problem.
+
 
 - EventListener: Use Blur Instead of Click for Better UX
 
@@ -128,9 +132,11 @@ For input validation, I used 'blur' for the first time for the form submitting p
   })
 ```
 
+
 - event.preventDefault(): Disable Browser Default Pop-up Message
 
 Browsers come with default pop-up messages that will conflict with the custom styling. Use event.preventDefault() to disable them.
+
 
 ### Continued development
 
@@ -147,6 +153,7 @@ Needless to say, this solution still has a lot of room for improvement.
 - CSS (style.css)/ HTML (index.html): for the arrow.svg, I couldn't find a way to change its thickness to 2px as design file suggested, and unable to make it horizontally and vertically center in the button.
 
 Any feedback or advice is highly welcomed.
+
 
 ### Useful resources
 
