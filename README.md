@@ -1,5 +1,7 @@
 # Base Apparel Coming Soon
 
+This project is a responsive website, with optimal layout for mobile and desktop, and come with basic form validation. Built with HTML, CSS and Javascript.
+
 ## Table of contents
 
 - [Overview](#overview)
