@@ -215,6 +215,7 @@ button {
     font-size: 16px;
   }
 
+  /* Be careful: set the button to relative for hover effect */
   button {
     position: relative;
     width: 100px;
