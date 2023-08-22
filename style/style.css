@@ -1,3 +1,144 @@
+* {
+  box-sizing: border-box
+}
+
+h1, p, form {
+  font-family: Josefin Sans, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 2em auto;
+  text-align: center;
+  height: 800px;
+  max-width: 376px;
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 244, 244));
+  box-shadow: 0px 15px 30px -11px rgba(133, 161, 210, 50%);
+}
+
+.mobile-header {
+  display: flex;
+}
+
+.mobile-logo {
+  width: 100px;
+  height: 20.89px;
+  align-self: flex-start;
+  margin: 1.5em;
+}
+
+.img-col {
+  width: 100%;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+}
+
+.inner-container {
+  padding: 3.5em 3em;
+}
+
+.first-title {
+  font-weight: 200;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: 10.83px;
+  color: #CE9898;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.snd-title {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 42px;
+  letter-spacing: 12.83px;
+  color: #423A3A;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
 .desktop-logo {
   display: none;
+}
+
+p {
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 32px;
+  color: #CE9898;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  height: 48px;
+  border: 1px solid #CE9898;
+  border-radius: 28px;
+  background-color: transparent;
+  align-items: center;
+}
+
+input {
+  flex: 1;
+  border: none;
+  background-color: transparent;
+  padding-left: 1.5em;
+
+  font-weight: 200;
+  font-size: 14px;
+  line-height: 28px;
+  vertical-align: center;
+}
+
+input:focus {
+  outline: none;
+}
+
+::placeholder {
+  color: #CE9898;
+}
+
+button {
+  position: relative;
+  left: 2px;
+  width: 64px;
+  height: 48px;
+  border: none;
+  border-radius: 28px;
+  background: linear-gradient(to bottom right, rgb(248, 191, 191),rgb(238, 139, 139));
+  box-shadow: 0px 15px 20px rgb(198, 110, 110, 0.2476);
+  align-items: center;
+}
+
+.arrow {
+  margin: 0 auto;
+  width: 8.84px;
+  height: 17.67px;
+}
+
+.error {
+  display: none;
+
+  width: 24px;
+  height: 24px;
+  margin-right: 8px;
+}
+
+.error-message {
+  display: none;
+
+  font-size: 13px;
+  text-align: left;
+  margin-left: 22px;
+  margin-top: 8px;
+  color: #F96464;
 }

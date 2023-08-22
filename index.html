@@ -35,15 +35,23 @@
     <div class="intro-section">
       <div class="inner-container">
         <img class="desktop-logo" src="./images/logo.svg" alt="website-logo">
-        <h1>We're coming soon</h1>
+
+        <div class="title">
+          <h1 class="first-title">WE'RE</h1>
+          <h1 class="snd-title">COMING<br> SOON</h1>
+        </div>
 
         <p>Hello fellow shoppers! We're currently building our new fashion store. 
         Add your email below to stay up-to-date with announcements and our launch deals.</p>
         
-        <form>
+        <form id="email-form">
           <input type="email" name="email" placeholder="Email Address" required>
-          <button type="submit">></button>
+          <img class="error" src="./images/icon-error.svg" alt="error">
+          <button type="submit">
+            <img class="arrow" src="./images/icon-arrow.svg">
+          </button>
         </form>
+        <p class="error-message"> Please provide a valid email</p>
       </div>
     </div>
   </div>
@@ -54,5 +62,6 @@
       Coded by <a href="#">PEIPEI</a>.
     </p>
   </footer>
+  <script src="app.js"></script>
 </body>
 </html>
